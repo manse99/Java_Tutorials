@@ -1,0 +1,37 @@
+let myArr =[
+        {
+         name: "Eric",
+         height: 78,
+         hairColor: "black",
+         favoriteActivities: [
+             'Basketball', "coding", "classes", "Other fun stuff"
+         ]
+         }, {
+             name: "Mario",
+             height: 71,
+             hairColor: "red",
+         }, {
+             name: "Nabila",
+             height: 57,
+             hairColor: "blue",
+         }
+     ];
+
+    getName = (myArr) => myArr.name
+    let studentName = [];
+    for (let i = 0; i < myArr.length; i++) {
+        let name = getName(myArr[i]);
+        studentName.push(name);
+    }
+    console.log(studentName);
+    // console.log(myArr[0])
+    // console.log(myArr)
+    
+    // let myself = {
+    //     name: "Eric",
+    //     height: 78,
+    //     hairColor: "black",
+    //     favoriteActivities: [
+    //         'Basketball', "coding", "classes", "Other fun stuff"
+    //     ]
+    // }

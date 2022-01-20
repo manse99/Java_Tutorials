@@ -1,0 +1,40 @@
+     function computeSumOfAllElements(arr) {
+         let sum = 0; // initialize sum of all elements
+         for (let i = 0; i < arr.length; i++) { // itierate thru the elements
+             sum += arr[i]; // add them to "sum"
+
+         }
+         return sum;
+     }
+     var arr = ['gabriel', 'cohen', 'joan', 'cohen', 'nancy', 'drew'];
+
+     /* ---------------------------------------------------------------*/
+     // Sorting arrays by Length Longest first then Shortest first
+     /*----------------------------------------------------------------*/
+     /* ----------------The Longest first ----------------------------*/
+     var newarr = ["zebras", "dogs", "elephants", "penguins"].sort(function(a, b) {
+         return b.length - a.length;
+     });
+     console.log(newarr);
+     /*---------------The shortest first -------------------------------*/
+     var newarr1 = ["zebras", "dogs", "elephants", "penguins"].sort(function(a, b) {
+         return a.length - b.length;
+     });
+     console.log(newarr1);
+     /*------------------------------------------------------------------------------*/
+     //------------------numerical sorting by ascending order -----------------------//
+     var newarr2 = [100, 1000, 10, 10000, 1, .01, .001, .0001].sort(function(a, b) {
+         return a - b;
+     });
+     console.log(newarr2);
+     //------------------numerical sorting by decending order -----------------------//
+     var newarr3 = [100, 1000, 10, 10000, 1, .01, .001, .0001].sort(function(a, b) {
+         return b - a;
+     });
+     console.log(newarr3);
+     //-------------------------------------------------------------------------------------//
+     var gabe = [1, 7.8, 3.6, 0.23, 8.55, 3.89, 6.06];
+     let myarr = gabe.sort(function(a, b) {
+         return a - b;
+     });
+     console.log(myarr);
